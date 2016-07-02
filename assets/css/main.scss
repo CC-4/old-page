@@ -1,0 +1,22 @@
+---
+# A
+---
+
+/* Header font families */
+$header-font-1: 'Candal', sans-serif;
+$header-font-2: 'Archivo Black', sans-serif;
+$header-font-3: 'Rubik One', sans-serif;
+$header-font-4: 'Rubik Mono One', sans-serif;
+/* Title font families */
+$title-font-1: 'Montserrat', sans-serif;
+/* font families */
+$font-1: 'Abel', sans-serif;
+$font-2: 'Marvel', sans-serif;
+$font-3: 'Tenali Ramakrishna', sans-serif;
+$font-4: 'Athiti', sans-serif;
+
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

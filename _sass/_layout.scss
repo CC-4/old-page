@@ -1,0 +1,92 @@
+header {
+    background-image: url("/assets/imgs/header.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    h1,h2,h3,h4,h5,h6 {
+        font-family: $header-font-3;
+    }
+}
+
+.w3-padding-200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.w3-prerequisitos {
+    h2 {
+        font-family: $title-font-1;
+        font-weight: bold;
+    }
+    li {
+        font-family: $font-4;
+        font-weight: bold;
+    }
+}
+
+.w3-myvar {
+    a {
+        font-family: $font-2;
+        font-size: 25px;
+    }
+}
+
+.descripcion {
+    p {
+        font-family: $font-4;
+        font-weight: bold;
+    }
+}
+
+.descripcion2 {
+    p {
+        font-family: $font-1;
+    }
+}
+
+.w3-dablue {
+    background-color: rgb(35, 40, 46);
+}
+
+.w3-dalightgrey {
+    background-color: #d6d6c2;
+}
+
+.w3-labsgrey {
+    background-color: #eaeae1;
+}
+
+.w3-team {
+    h2 {
+        font-family: $title-font-1;
+        font-weight: bold;
+    }
+    h3  {
+        font-family: $title-font-1;
+    }
+    p {
+        font-family: $font-1;
+        font-size: 20px;
+    }
+}
+
+footer {
+    h2 {
+        font-family: $title-font-1;
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font-1;
+}
+
+.lab-content {
+    p {
+        text-align: justify;
+        font-family: $font-4;
+        font-size: 22px;
+        margin: 16px 16px 16px 16px;
+        padding: 8px 8px 8px 8px;
+    }
+}

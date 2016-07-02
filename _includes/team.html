@@ -1,0 +1,23 @@
+<!-- TEAM -->
+<div class="w3-container w3-team w3-center w3-padding-16">
+    <h2 class="w3-dalightgrey w3-padding-16"><i class="fa fa-users"></i> STAFF</h2><br>
+    <div class="w3-row-padding w3-center">
+        {% for member in site.data.members %}
+            <div class="w3-quarter">
+                {% if member.name == "Ali Lemus" %}
+                <div class="w3-card-4 w3-padding-top w3-orange w3-round-xlarge">
+                {% elsif member.name == "Diego Calderón" %}
+                <div class="w3-card-4 w3-padding-top w3-green w3-round-xlarge">
+                {% elsif member.name == "Carlos Hermosilla" %}
+                <div class="w3-card-4 w3-padding-top w3-red w3-round-xlarge">
+                {% elsif member.name == "Andrés Castellanos" %}
+                <div class="w3-card-4 w3-padding-top w3-blue w3-round-xlarge">
+                {% endif %}
+                <img src="{{member.avatar}}" alt="{{member.name}}" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>{{member.name}}</h3>
+                <p>{{member.job}}</p>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

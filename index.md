@@ -1,0 +1,6 @@
+---
+layout: homepage
+---
+Este es un curso introductorio al diseño de lenguajes de programación y la implementación de sus compiladores e intérpretes. En el proceso, haremos una exploración general al diseño de lenguajes de programación y su impacto en la implementación de los mismos, este semestre, nos enfocaremos en un lenguaje particular: Classroom Object Oriented Language (COOL).
+
+Uno de los objetivos de este curso es explorar la estructura de los lenguajes de programación y considerar alternativas a características familiares en lenguajes de programación. Estudiaremos además el problema de la traducción de lenguajes de alto nivel a formas que pueda ejecutar la máquina, utilizando el lenguaje COOL como lenguaje de alto nivel y MIPS32 como lenguaje ensamblador. La implementación de un compilador se hace por varias razones; Primero para aprender técnicas que se aplican a muchas clases de problemas fuera del ámbito de un compilador, segundo, para obtener una mejor comprensión de las herramientas que utilizamos cuando programamos y los costos de los programas que escribimos, y tercero (y probablemente la más importante), para obtener experiencia construyendo y validando un problema de ingeniería sustancialmente complejo.

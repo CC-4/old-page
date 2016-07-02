@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="w3-container w3-prerequisitos">
+    <h2 class="w3-padding-left w3-padding-16 w3-left-align w3-dalightgrey"><i class="fa fa-check-square"></i> PREREQUISITOS </h2>
+    <ul class="w3-ul">
+        {% for prere in site.data.prerequisitos %}
+        <li class="w3-hide-small w3-xlarge"><i class="fa fa-check"></i> {{prere.pre}}</li>
+        <li class="w3-hide-medium w3-hide-large w3-large"><i class="fa fa-check"></i> {{prere.pre}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="w3-container w3-prerequisitos">
+    <h2 class="w3-left-align w3-padding-16 w3-padding-left w3-dalightgrey"><i class="fa fa-file-text"></i> DESCRIPCIÓN </h2>
+    <div class="descripcion w3-xlarge w3-justify w3-hide-small">
+        {{content}}
+    </div>
+    <div class="descripcion w3-large w3-justify w3-hide-large w3-hide-medium">
+        {{content}}
+    </div>
+</div>
+
+{% include team.html %}
