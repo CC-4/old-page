@@ -1,10 +1,16 @@
+<!--
+    Pagina de CC4 - Compiladores
+
+    Default Layout (Pagina en general)
+-->
 <!DOCTYPE html>
 <html>
     {% include head.html %}
-    <body>
-        {% include nav.html %}
+    <body class="w3-light-grey">
+        {% include navbar.html %}
         {% include header.html %}
-        {{content}}
+        {{ content }}
         {% include footer.html %}
+        {% include scripts.html %}
     </body>
 </html>

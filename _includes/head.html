@@ -1,22 +1,21 @@
+<!--
+    Pagina de CC4 - Compiladores
+
+    Head
+-->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
-    <!-- Main Style -->
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl}}">
+    <meta name="description" content="{{site.descripcion}}">
+    <!-- Titulo de pagina o sitio -->
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <!-- Google Fonts -->
-    <!-- Titulo Header -->
-    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Rubik+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
-    <!-- Titulos general -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <!-- Escritura general -->
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Tenali+Ramakrishna' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet' type='text/css'>
-    <!-- Icons -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <!-- LaTeX Render -->
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>

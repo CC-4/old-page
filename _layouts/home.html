@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<!--
+    Pagina de CC4 - Compiladores
+
+    Home Layout (Para mostrar el Index)
+-->
+<div class="w3-container site-home w3-padding-0 w3-margin-0">
+    {{content}}
+</div>
+<div class="w3-container w3-center w3-padding-0 w3-light-grey site-team">
+    <h2 class="site-blue w3-padding-16" style="margin-top: 0;"><i class="material-icons">group</i> TEAM</h2><br>
+    <div class="w3-row-padding w3-center">
+        {% for member in site.data.team %}
+            <div class="w3-quarter w3-margin-bottom">
+                {% if forloop.first %}
+                <div class="w3-card-4 w3-padding-top w3-orange w3-round-xlarge">
+                {% elsif forloop.index == 2 %}
+                <div class="w3-card-4 w3-padding-top w3-green w3-round-xlarge">
+                {% elsif forloop.index == 3 %}
+                <div class="w3-card-4 w3-padding-top w3-red w3-round-xlarge">
+                {% elsif forloop.last %}
+                <div class="w3-card-4 w3-padding-top w3-blue w3-round-xlarge">
+                {% endif %}
+                <h3>{{member.name}}</h3>
+                <img src="{{member.avatar}}" alt="{{member.name}}" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h5>{{member.job}}</h5>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

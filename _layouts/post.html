@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="w3-container w3-card-8 w3-margin w3-padding-16 site-post">
+    {{content}}
+</div>
+{% if page.comments %}
+<div class="w3-container w3-card-8 w3-margin w3-padding-16 site-post">
+<div id="disqus_thread"></div>
+</div>
+{% endif %}

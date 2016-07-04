@@ -1,92 +1,145 @@
-header {
+/* Estilos para Layout */
+
+/* Colors */
+.site-blue {
+    background-color: $deep-blue;
+}
+.site-lightgrey {
+    background-color: $light-grey;
+}
+.site-gre {
+    background-color: $grey;
+}
+
+/* Header */
+.site-header {
     background-image: url("/assets/imgs/header.png");
-    background-size: 100% 100%;
     background-repeat: no-repeat;
-    h1,h2,h3,h4,h5,h6 {
-        font-family: $header-font-3;
+    background-size: 100% 100%;
+    h1 {
+        font-family: $header-font;
+        color: white;
     }
 }
 
-.w3-padding-200 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+.site-header-hide-small {
+    @extend .w3-hide-small;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    h1 {
+        font-size: 64px;
+    }
 }
 
-.w3-prerequisitos {
+.site-header-hide-large {
+    @extend .w3-hide-large;
+    @extend .w3-hide-medium;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Footer */
+.site-footer {
+    background-color: $deep-blue;
+    h4 {
+        font-family: $headings-font;
+        color: white;
+        font-size: 24px;
+    }
+}
+
+/* Navbar */
+.site-navbar {
+    @extend .w3-large;
+    background-color: $deep-blue;
+    font-family: $headings-font;
+    color: white;
+}
+
+/* Team */
+.site-team {
     h2 {
-        font-family: $title-font-1;
-        font-weight: bold;
-    }
-    li {
-        font-family: $font-4;
-        font-weight: bold;
+        font-family: $headings-font;
+        color: white;
     }
 }
 
-.w3-myvar {
-    a {
-        font-family: $font-2;
+/* Home */
+.site-home {
+    h2 {
+        @extend .w3-padding-16;
+        @extend .w3-center;
+        font-family: $headings-font;
+        color:white;
+        text-align: center;
+        background-color: $deep-blue;
+    }
+    p {
+        @extend .w3-card-4;
+        @extend .w3-margin;
+        @extend .w3-padding-16;
+        @extend .w3-justify;
+        background-color: white;
+        font-family: $general-font;
+        color: black;
         font-size: 25px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-}
-
-.descripcion {
-    p {
-        font-family: $font-4;
+    ul {
+        @extend .w3-ul;
+        @extend .w3-card-4;
+        @extend .w3-margin;
+        @extend .w3-padding-16;
+        @extend .w3-justify;
+        font-family: $general-font;
+        background-color: white;
         font-weight: bold;
-    }
-}
-
-.descripcion2 {
-    p {
-        font-family: $font-1;
-    }
-}
-
-.w3-dablue {
-    background-color: rgb(35, 40, 46);
-}
-
-.w3-dalightgrey {
-    background-color: #d6d6c2;
-}
-
-.w3-labsgrey {
-    background-color: #eaeae1;
-}
-
-.w3-team {
-    h2 {
-        font-family: $title-font-1;
-        font-weight: bold;
-    }
-    h3  {
-        font-family: $title-font-1;
-    }
-    p {
-        font-family: $font-1;
-        font-size: 20px;
-    }
-}
-
-footer {
-    h2 {
-        font-family: $title-font-1;
-        font-size: 18px;
-        display: inline-block;
-    }
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $title-font-1;
-}
-
-.lab-content {
-    p {
-        text-align: justify;
-        font-family: $font-4;
         font-size: 22px;
-        margin: 16px 16px 16px 16px;
-        padding: 8px 8px 8px 8px;
+    }
+}
+
+.site-list {
+    h3,h4,h5 {
+        font-family: $headings-font;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    p {
+        font-family: $general-font;
+        font-size: 18px;
+    }
+}
+
+.site-post {
+    background-color: white;
+    font-family: $general-font;
+    font-size: 22px;
+    h1,h2,h3,h4,h5,h6 {
+        font-family: $headings-font;
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        @extend .w3-padding-16;
+        @extend .w3-margin;
+        @extend .w3-justify;
+    }
+    hr {
+        border-bottom-style: dashed;
+        border-bottom-width: medium;
+        border-bottom-color: black;
+    }
+    blockquote {
+        @extend .w3-leftbar;
+        @extend .w3-light-grey;
+        font-style: italic;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
