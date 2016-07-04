@@ -5,8 +5,8 @@ slack_page: https://cc4-2016.slack.com
 footerlogo: logo-footer.png
 descripcion: >
  Pagina del curso CC4 - Compiladores de Universidad Galileo
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cc-4.github.io/" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://cc-4.github.io/"
 
 # Build settings
 markdown: kramdown
