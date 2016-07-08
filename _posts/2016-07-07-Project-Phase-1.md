@@ -9,8 +9,11 @@ descripcion: >
  Instrucciones para la fase 1 del compilador de COOL.
 ---
 # Programming Assignment I
+
 ## 1. Overview of the Programming Project
+
 Programming assignments I–IV will direct you to design and build a compiler for Cool. Each assignment will cover one component of the compiler:
+
 * lexical analysis
 * parsing
 * semantic analysis
@@ -105,13 +108,11 @@ Note that even though this is the first programming assignment, the directory na
 
 * `cool.lex`
 This file contains a skeleton for a lexical description for Cool. There are comments indicating where you need to fill in code, but this is not necessarily a complete guide. Part of the assignment is for you to make sure that you have a correct and working lexer. Except for the sections indicated, you are welcome to make modifications to our skeleton. You can actually build a scanner with the skeleton description, but it does not do much. You should read the JLex manual to figure out what this description does do. Any auxiliary routines that you wish to write should be added directly to this file in the appropriate section (see comments in the file).
-* `test.cl`
-This file contains some sample input to be scanned. It does not exercise all of the lexical specification, but it is nevertheless an interesting test. Feel free to modify this file to test your scanner.
-• `README`
-
-This file contains detailed instructions for the assignment as well as a number of useful tips.
+* `test.cl` This file contains some sample input to be scanned. It does not exercise all of the lexical specification, but it is nevertheless an interesting test. Feel free to modify this file to test your scanner.
+• `README` This file contains detailed instructions for the assignment as well as a number of useful tips.
 Although these files are incomplete as given, the lexer does compile and run. To build the lexer, you must type:
- ```shell
+
+```shell
 make lexer
 ```
 
@@ -130,11 +131,9 @@ requirements for reporting and recovering from lexical errors:
 
 * When an invalid character (one that can’t begin any token) is encountered, a string containing just
 that character should be returned as the error string. Resume lexing at the following character.
-
 * If a string contains an unescaped newline, report that error as `"Unterminated string constant"`
 and resume lexing at the beginning of the next line—we assume the programmer simply forgot the
 close-quote.
-
 * When a string is too long, report the error as `"String constant too long"` in the error string
 in the `ERROR` token. If the string contains invalid characters (i.e., the null character), report this
 as `"String contains null character"`. In either case, lexing should resume after the end of the
@@ -146,7 +145,6 @@ string. The end of the string is defined as either
 in comment"`. Do not tokenize the comment’s contents simply because the terminator is missing.
 Similarly for strings, if an `EOF` is encountered before the close-quote, report this error as `"EOF in
 string constant"`.
-
 * If you see `"*)"` outside a comment, report this error as `" Unmatched *)"`, rather than tokenzing it
 as `*` and `)`.
 
@@ -170,13 +168,13 @@ create a Symbol with the entire literal’s text as its contents, regardless of 
 Your scanner should convert escape characters in string constants to their correct values. For example,
 if the programmer types these eight characters:
 <center>
- `"` `a` `\` `n` `c` `d` `"`
+![String1]({{ site.url }}/proyectos/strings1.png)
 </center>
 
 your scanner would return the token STR CONST whose semantic value is these 5 characters:
 
 <center>
- `"` `a` `\n` `c` `d` `"`
+![String2]({{ site.url }}/proyectos/strings2.png)
 </center>
 
 where `\n` represents the literal ASCII character for newline.
@@ -185,13 +183,13 @@ Following specification on page 15 of the Cool manual, you must return an error 
 the literal null character. However, the sequence of two characters
 
 <center>
- `\` `0`
+![String_null1]({{ site.url }}proyectos/strings_null1.png)
 </center>
 
 is allowed but should be converted to the one character
 
 <center>
- `0`
+![String_null2]({{ site.url }}proyectos/strings_null2.png)
 </center>
 
 ### 4.4 Other Notes
