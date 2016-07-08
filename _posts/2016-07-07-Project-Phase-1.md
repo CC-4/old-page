@@ -168,13 +168,13 @@ create a Symbol with the entire literal’s text as its contents, regardless of 
 Your scanner should convert escape characters in string constants to their correct values. For example,
 if the programmer types these eight characters:
 <center>
-![String1]({{ site.url }}/proyectos/strings1.png)
+<img alt="String1" src="{{ site.url }}proyectos/strings1.png"/>
 </center>
 
 your scanner would return the token STR CONST whose semantic value is these 5 characters:
 
 <center>
-![String2]({{ site.url }}/proyectos/strings2.png)
+<img alt="String2" src="{{ site.url }}proyectos/strings2.png" />
 </center>
 
 where `\n` represents the literal ASCII character for newline.
@@ -183,13 +183,13 @@ Following specification on page 15 of the Cool manual, you must return an error 
 the literal null character. However, the sequence of two characters
 
 <center>
-![String_null1]({{ site.url }}proyectos/strings_null1.png)
+<img alt="String_null1" src="{{ site.url }}proyectos/strings_null1.png" />
 </center>
 
 is allowed but should be converted to the one character
 
 <center>
-![String_null2]({{ site.url }}proyectos/strings_null2.png)
+<img alt="String_null2" src="{{ site.url }}proyectos/strings_null2.png" />
 </center>
 
 ### 4.4 Other Notes
