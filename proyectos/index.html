@@ -15,7 +15,7 @@ title: Proyectos
             </div>
             <div class="w3-container w3-padding-8">
                 <h3><b>{{proyecto.title}}</b></h3>
-                <h5><span class="w3-opacity">April 7, 2014</span></h5>
+                <h5><span class="w3-opacity">{{ proyecto.date | date: "%b %-d, %Y" }}</span></h5>
             </div>
             <div class="w3-container">
                 <p>{{proyecto.descripcion}}</p>
