@@ -28,6 +28,7 @@ You must work individually on this assignment (no collaboration in groups).
 
 ## 2. Introduction to JLex
 JLex allows you to implement a lexical analyzer by writing rules that match on user-defined regular expressions and performing a specified action for each matched pattern. JLex compiles your rule file (e.g., “lexer.lex”) to Java source code implementing a finite automaton recognizing the regular expressions that you specify in your rule file. Fortunately, it is not necessary to understand or even look at the automatically generated (and often very messy) file implementing your rules. Rule files in JLex are structured as follows:
+
 ```JLex
 %{
 Declarations
@@ -38,10 +39,13 @@ Rules
 %%
 User subroutines
 ```
+
 The Declarations and User subroutines sections are optional and allow you to write declarations and helper functions in Java. The Definitions section is also optional, but often very useful as definitions allow you to give names to regular expressions. For example, the definition
+
 ```JLex
 DIGIT = [0-9]
 ```
+
 allows you to define a digit. Here, `DIGIT` is the name given to the regular expression matching any single character between 0 and 9. The following table gives an overview of the common regular expressions that can be specified in _JLex_:
 
 |Expression|               Description                    |
