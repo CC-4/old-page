@@ -45,6 +45,5 @@ Para reciclar los archivos que ya tienen instalados en su maquina virtual, emple
 make -f /usr/class/cs143/assignments/PA2J/Makefile
 
 De todos los archivos que se copiaran, unicamente deben modificar cool.lex, y agregar las expresiones regulares necesarias para que se generen los tokens de la 
-gramatica. Por razones de funcionamiento, no modificaremos el archivo TokenConstants.java, que contiene todos los tokens necesarios para el proyecto. 
-
-
+gramatica. Por razones de funcionamiento, no modificaremos el archivo TokenConstants.java, que contiene todos los tokens necesarios para el proyecto. Para 
+facilitar la implementacion, retiraremos los comentarios y los strings multilinea, asi como el soporte para el caracter '\n' de ellos. 
