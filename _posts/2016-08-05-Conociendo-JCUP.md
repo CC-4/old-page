@@ -123,7 +123,7 @@ y para correrlo:
 ~$ sh calculator.sh
 ```
 
-Asi se debera vera al probarlo:
+Asi se debera ver al probarlo:
 
 ```shell
 2 + 2;
