@@ -29,6 +29,13 @@ terminal PLUS, MINUS, MULT;
 terminal Integer INTEGER;
 terminal Float FLOAT;
 ```
+Luego pueden especificar una precedencia. Por ejemplo, una multiplicacion se debe hacer antes que una suma. Para este tipo de precedencia deben 
+emplear "precedence left", como en el siguiente ejemplo:
+
+```
+precedence left PLUS, MINUS;
+precedence left TIMES;
+```
 
 Seguido de eso, van todas las reglas de produccion. Siguiendo la siguiente sintaxis, donde RESULT es la derivacion usando bottom-up parsing.
 
@@ -80,7 +87,7 @@ Para la primer parte deben completar el archivo calculator.lex generando los tok
 basicas y que maneje tanto floats como enteros. Note que las funciones trigonometricas no son case sensitive, 
 por lo que "sin" y "sIN" son aceptadas de igual manera. Esta es la lista de tokens que debe tener:
 
-...
+```
 SEMI
 PLUS
 MINUS
@@ -95,7 +102,7 @@ COS
 TAN
 INTEGER
 FLOAT
-...
+```
 
 Si analizan la gramatica, pueden ver que una expresion puede ser una expresion entera, o una expresion de punto flotante. Mas adelante veran que esta 
 gramatica se puede simplificar dejando la distincion entre enteros y floats al analizador sematico. 
@@ -115,4 +122,14 @@ y para correrlo:
 ```shell
 ~$ sh calculator.sh
 ```
+
+Asi se debera vera al probarlo:
+```
+2 + 2;
+= 4;
+4 * cos(0.41e1 ^ 2);
+= -3.830638;
+```
+
+
 Una vez terminado, suban los archivos .cup y .lex al ges comprimidos en una carpeta .zip.
