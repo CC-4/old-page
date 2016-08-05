@@ -24,17 +24,17 @@ Al igual que JLex, Cup cuenta con una seccion donde se colocan las funciones que
 funcionalidad, pero les sera util para su proyecto. Luego existe una lista de simbolos terminales, como los parentesis, los digitos, etc., seguido de 
 una lista de simbolos no terminales. Tanto los simbolos terminales como los no terminales pueden tener un tipo definido:
 
-...
+```
 terminal PLUS, MINUS, MULT;
 terminal Integer INTEGER;
 terminal Float FLOAT;
-...
+```
 
 Seguido de eso, van todas las reglas de produccion. Siguiendo la siguiente sintaxis, donde RESULT es la derivacion usando bottom-up parsing.
 
-...
+```
 parent_expr ::= LPAREN expr:e RPAREN {: RESULT=e; :};
-...
+```
 
 ## 2. Ejercicio 1 - Lexer
 
