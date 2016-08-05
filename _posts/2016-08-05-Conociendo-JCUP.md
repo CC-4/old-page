@@ -87,7 +87,7 @@ Para la primer parte deben completar el archivo calculator.lex generando los tok
 basicas y que maneje tanto floats como enteros. Note que las funciones trigonometricas no son case sensitive, 
 por lo que "sin" y "sIN" son aceptadas de igual manera. Esta es la lista de tokens que debe tener:
 
-```
+```shell
 SEMI
 PLUS
 MINUS
@@ -124,7 +124,8 @@ y para correrlo:
 ```
 
 Asi se debera vera al probarlo:
-```
+
+```shell
 2 + 2;
 = 4;
 4 * cos(0.41e1 ^ 2);
