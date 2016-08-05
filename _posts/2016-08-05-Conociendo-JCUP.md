@@ -16,6 +16,12 @@ descripcion: >
 
 ## 1. Introducción:
 
+Descarguen todos los archivos del siguiente repositorio:
+
+```
+git clone https://github.com/CC-4/lab4.git
+```
+
 Ahora que han terminado la fase 1 de su proyecto, saben utilizar JLex para el analisis lexico de una cadena de caracteres. Como han visto en clase,
 el analisis sintactico se basa en gramaticas, y tiene algoritmos muy bien definidos para poder ser implementado. Para prepararlos para la 
 fase 2, utilizaremos una herramienta llamada CUP, que funciona para analizar la sintaxis de un texto dado. 
