@@ -2,7 +2,7 @@
 layout: post
 title: "Bottom-Up Parsing - SLR(1)"
 comments: false
-date:   2016-08-12 11:10:00 -0600
+date:   2016-08-11 11:10:00 -0600
 category: lab
 numero: 5
 descripcion: >
