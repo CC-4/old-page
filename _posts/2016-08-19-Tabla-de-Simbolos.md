@@ -29,7 +29,7 @@ Para iniciar, ejecuten el comando para generar los archivos necesarios:
 Estos son los archivos necesarios para implementar la fase 3 del proyecto, pero por ahora nos enfocaremos unicamente en <i>SymtabExample.java</i>. Vean que 
 este archivo contiene un ejemplo de como funciona la tabla de simbolos: 
 
-```
+```java
 	SymbolTable map = new SymbolTable(); // se crea la tabla de sibolos.
 	AbstractSymbol fred = AbstractTable.stringtable.addString("Fred"); // se crea un nuevo AbstractSymbol
 	map.enterScope(); // se agrega un nuevo scope a la tabla. Notese que al crear la tabla, esta no contiene ningun scope
