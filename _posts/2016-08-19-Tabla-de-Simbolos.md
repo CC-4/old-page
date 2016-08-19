@@ -57,7 +57,7 @@ estos son los metodos que contiene la clase:
 Vean que las entradas de la tabla de simbolos son pares (Key,Value), donde el valor es de tipo <i>Object</i>. En este lab, para simplificar la calificacion, 
 ingresaremos unicamente valores de tipo <b>String</b>. 
 
-Ahora que se han familiarizado un poco con la tabla de simbolos, es hora de modificar el archivo <i>SumtabExample.java</i>. Agregue a este un menú en el que 
+Ahora que se han familiarizado un poco con la tabla de simbolos, es hora de modificar el archivo <i>SymtabExample.java</i>. Agregue a este un menú en el que 
 se puedan realizar las siguientes operaciones: 
 
 1. Agregar Símbolo
