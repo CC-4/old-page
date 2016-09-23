@@ -79,7 +79,7 @@ adecuadas en sus funciones. Los errores que deben capturar estan el en archivo <
 
 ## 3. NO_TYPE:
 
-Recordemos aquella clase, hace mucho tiempo, donde hablamos de **NO_TYPE** para Cool. **NO_TYPE** es un tipo especial; es una clase que hereda de 
+Recordemos aquella clase, hace mucho tiempo, donde hablamos de **NO_TYPE** para COOL. **NO_TYPE** es un tipo especial; es una clase que hereda de 
 todas las demas en <i>COOL</i>. Esto permite evitar una cascada de errores que abrumarian a cualquier programador. Sin embargo, **NO_TYPE** degenera 
 el arbol de herencia, ya que todos los nodos conectan a el. A pesar de esto, existe otra forma de implementar **NO_TYPE** para no tener que enfrentarse 
 a los problemas de una estructura donde todos los nodos conecten con uno; y es con condiciones en casos especiales en su codigo (recuerden el **Hint**).
@@ -90,7 +90,7 @@ Para Vyper, y a falta de objetos, diremos que **NO_TYPE** puede operarse con cua
 		true + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
 	}
 ```
-Noten que intentar sumar un true con un numero daria un error, y con un error seria suficiente, sin embargo, este es el output generado cuando
+Noten que intentar sumar un <i>boolean</i> con un numero daria un error, y con un error seria suficiente, sin embargo, este es el output generado cuando
 no se maneja correctamente **NO_TYPE**:
 
 
