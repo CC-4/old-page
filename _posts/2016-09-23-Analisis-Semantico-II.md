@@ -6,7 +6,7 @@ date:   2016-09-23 11:10:00 -0600
 category: lab
 numero: 8
 descripcion: >
- Luego de un breve receso, cerramos esta sección con el analisis semantico de la segunda parte del lenguaje **Viper**.
+ Luego de un breve receso, cerramos esta sección con el analisis semantico de la segunda parte del lenguaje Viper.
 ---
 
 ## 1. Introducción:
@@ -70,16 +70,12 @@ Pueden parecer muchos, pero noten que hay varios nodos que se analizan de forma 
 las comparaciones.
 
 
-```
-
 ## 2. Atrapar Errores:
 
 Recuerden que el analisis semantico es la ultima defensa de un compilador contra codigo incorrecto, asi que en esta parte, es muy importante terminar 
 capturar todos los errores posibles poder generar codigo correcto. Igual que en el laboratorio anterior, deben implementar las verificaciones 
 adecuadas en sus funciones. Los errores que deben capturar estan el en archivo <i>SemantErrors.java</i>.
 
-
-```
 
 ## 3. NO_TYPE:
 
