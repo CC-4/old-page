@@ -46,7 +46,7 @@ la función, si tienen el siguiente fragmento de código:
 
  su programa debera optimizarlo, operando la suma y luego escribiendo una unica constante, de la siguente manera: 
 
- ```shell
+```shell
   def foo() = 5
 ```
 
