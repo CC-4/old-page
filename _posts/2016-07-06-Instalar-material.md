@@ -32,7 +32,7 @@ Después de haber realizado lo anterior, como se les mencionó en clase, el uso 
 git init
 ```
 
-## Descargar máquina virtual
+## Opcion 1: Descargar máquina virtual
 La máquina virtual la pueden descargar desde cualquiera de los siguientes enlaces (ocupa 3.73Gb):
 
 * [Google Drive](https://drive.google.com/file/d/0B5xlmAbvK4yAbFlRbUFBQnR3akk/view?usp=sharing)
@@ -40,7 +40,9 @@ La máquina virtual la pueden descargar desde cualquiera de los siguientes enlac
 
 Es una máquina virtual de Ubuntu 16.04 LTS para VMWare Workstation 12, después de descargar el archivo CC4.zip debe descomprimirlo y abrir el archivo `.ovf` con el cual le deberá salir una ventana para agregar la máquina virtual a su VMWare.
 
-## Instalar el material necesario en una computadora con linux
+**Nota:** el password de la maquina virtual es `cool`
+
+## Opcion 2: Instalar el material necesario en una computadora con linux
 Deben ejecutar las siguientes lineas en la terminal: 
 
 ```shell
@@ -48,4 +50,4 @@ wget https://cc-4.github.io/proyectos/install_cc4.sh
 chmod +x install_cc4.sh
 . ./install_cc4.sh
 ```
-esto descargará Java 8 (Oracle), Jlex, CUP, Git y el código necesario para el proyecto.
+esto descargará Java 8 (Oracle), Jlex, CUP, git y el código necesario para el proyecto.
