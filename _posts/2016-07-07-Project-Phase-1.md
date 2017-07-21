@@ -233,7 +233,7 @@ Cool compiler that you can try on any test programs.
 ## 7. Autograding 
 You should download the script in the same folder where you executed the make command: 
 ```shell
-wget https://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa1-grading.pl
+wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa1-grading.pl
 chmod +x pa1-grading.pl
 ```
 
