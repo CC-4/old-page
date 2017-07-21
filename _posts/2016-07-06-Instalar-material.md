@@ -51,3 +51,7 @@ chmod +x install_cc4.sh
 . ./install_cc4.sh
 ```
 esto descargará Java 8 (Oracle), Jlex, CUP, git y el código necesario para el proyecto.
+**NOTA:** Si tienen problemas para usar spim y les sale un error que no se encuentra el archivo prueben ejecutar esta linea:
+```shell
+sudo apt-get install lib32z1 lib32ncurses5
+```
