@@ -107,7 +107,20 @@ The semantic analysis phase is by far the largest component of the compiler so f
 
 If you can answer these questions for each aspect of Cool, implementing a solution should be straightforward.
 
-## 11. Final Submission  
+## 11. Autograding 
+You should download the script in the same folder where you executed the make command: 
+```shell
+wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa3-grading.pl
+chmod +x pa3-grading.pl
+```
+
+Every time you want to execute the autograder you should use:
+```shell
+./pa23grading.pl
+```
+
+
+## 12. Final Submission  
 Make sure to complete the following items before submitting to avoid any penalties.
 
 1. Include your write-up in README.
