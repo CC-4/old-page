@@ -116,7 +116,7 @@ chmod +x pa3-grading.pl
 
 Every time you want to execute the autograder you should use:
 ```shell
-./pa23grading.pl
+./pa3-grading.pl
 ```
 
 
