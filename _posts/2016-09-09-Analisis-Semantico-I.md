@@ -75,6 +75,13 @@ cuando tengan listo pueden probarlo con:
   object -- has cycles --> false
   C -- has cycles --> false
   B -- has cycles --> false
+
+  Test 4:
+
+  A -- has cycles --> true
+  object -- has cycles --> false
+  C -- has cycles --> true
+  B -- has cycles --> true
 ```
 
 ## 2. Analisis Semantico del Lenguaje Viper
