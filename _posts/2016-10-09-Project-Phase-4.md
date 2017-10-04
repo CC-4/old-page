@@ -99,4 +99,17 @@ The Cool Runtime System manual mentions Coolaid, which is a tool used to verify 
 
 The executables spim and xspim are simulators for MIPS architecture on which you can run your generated code. The program xspim works like spim in that it lets you run MIPS assembly programs. However, it has many features that allow you to examine the virtual machine’s state, including the memory locations, registers, data segment, and code segment of the program. You can also set breakpoints and single step your program. The documentation for spim/xspim is on the course web page.
 
+
 **Warning.** One thing that makes debugging with spim difficult is that spim is an interpreter for assembly code and not a true assembler. If your code or data definitions refer to undefined labels, the error shows up only if the executing code actually refers to such a label. Moreover, an error is reported only for undefined labels that appear in the code section of your program. If you have constant data definitions that refer to undefined labels, spim won’t tell you anything. It will just assume the value 0 for such undefined labels.
+
+## 5. Autograding 
+You should download the script in the same folder where you executed the make command: 
+```shell
+wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa4-grading.pl
+chmod +x pa4-grading.pl
+```
+
+Every time you want to execute the autograder you should use:
+```shell
+./pa4-grading.pl
+```
