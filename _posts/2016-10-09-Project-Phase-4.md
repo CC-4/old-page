@@ -113,3 +113,11 @@ Every time you want to execute the autograder you should use:
 ```shell
 ./pa4-grading.pl
 ```
+
+## Documents
+* [The Tree package Javadoc](http://web.stanford.edu/class/cs143/javadoc/cool_ast/)
+* [The Cool Reference Manual](http://web.stanford.edu/class/cs143/materials/cool-manual.pdf)
+* [The Cool Runtime System](http://web.stanford.edu/class/cs143/materials/cool-runtime.pdf)
+* [Tour of the Cool Support Code](http://web.stanford.edu/class/cs143/materials/cool-tour.pdf)
+* [SPIM Manual](http://web.stanford.edu/class/cs143/materials/SPIM_Manual.pdf)
+* [Documento auxiliar para Cgen(esp)](https://github.com/CC-4/cc-4.github.io/raw/master/proyectos/doc%20auxiliar%20para%20cgen.pdf)
