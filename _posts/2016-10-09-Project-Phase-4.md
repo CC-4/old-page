@@ -13,7 +13,7 @@ descripcion: >
 ## 1. Introduction
 In this assignment, you will implement a code generator for Cool. When successfully completed, you will have a fully functional Cool compiler!
 
-The code generator makes use of the AST constructed in PA3 and static analysis performed in PA4. Your code generator should produce MIPS assembly code that faithfully implements any correct Cool program. 
+The code generator makes use of the AST constructed in PA3 and static analysis performed in PA4. Your code generator should produce MIPS assembly code that faithfully implements any correct Cool program.
 
 There is no error recovery in code generation—all erroneous Cool programs have been detected by the front-end phases of the compiler.
 
@@ -102,16 +102,23 @@ The executables spim and xspim are simulators for MIPS architecture on which you
 
 **Warning.** One thing that makes debugging with spim difficult is that spim is an interpreter for assembly code and not a true assembler. If your code or data definitions refer to undefined labels, the error shows up only if the executing code actually refers to such a label. Moreover, an error is reported only for undefined labels that appear in the code section of your program. If you have constant data definitions that refer to undefined labels, spim won’t tell you anything. It will just assume the value 0 for such undefined labels.
 
-## 5. Autograding 
-You should download the script in the same folder where you executed the make command: 
+## 5. Autograding
+You should download the script in the same folder where you executed the make command:
 ```shell
 wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa4-grading.pl
 chmod +x pa4-grading.pl
+
+# if you want to grade using your phase 1
+wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa4-grading-all.sh
+chmod +x pa4-grading-all.sh
 ```
 
 Every time you want to execute the autograder you should use:
 ```shell
 ./pa4-grading.pl
+
+# if you want to grade using your phase 1
+./pa4-grading-all.sh
 ```
 
 ## Documents

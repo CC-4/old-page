@@ -83,16 +83,23 @@ It is critical that you declare the correct types for the attributes of grammar 
 
 The javac type checker complains if you use the tree constructors with the wrong type parameters. If you fix the errors with frivolous casts, your program may throw an exception when the constructor notices that it is being used incorrectly. Moreover, CUP may complain if you make type errors.
 
-## 9. Autograding 
-You should download the script in the same folder where you executed the make command: 
+## 9. Autograding
+You should download the script in the same folder where you executed the make command:
 ```shell
 wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa2-grading.pl
 chmod +x pa2-grading.pl
+
+# if you want to grade using your phase 1
+wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa2-grading-all.sh
+chmod +x pa2-grading-all.sh
 ```
 
 Every time you want to execute the autograder you should use:
 ```shell
 ./pa2-grading.pl
+
+# if you want to grade using your phase 1
+./pa2-grading-all.sh
 ```
 
 
