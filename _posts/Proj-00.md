@@ -2,7 +2,7 @@
 layout: post
 title: "Instalación de material"
 comments: true
-date:   2018-07-11 11:58:00 -0600
+date:   2018-07-11 08:00:00 -0600
 category: proyectos
 numero: 0
 descripcion: >
