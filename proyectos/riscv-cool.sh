@@ -19,3 +19,5 @@ printf 'fi' >> coolc-rv
 chmod +x coolc-rv
 
 cd "$CWD"
+
+clear
