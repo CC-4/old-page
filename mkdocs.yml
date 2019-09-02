@@ -1,0 +1,73 @@
+# General Info
+site_name: CC-4
+site_description: Compiladores
+site_author: CC-4
+site_url: https://cc-4.github.io/
+
+# Repository
+edit_uri: edit/master/docs
+repo_name: cc-4/cc-4.github.io
+repo_url: https://github.com/cc-4/cc-4.github.io
+
+# Copyright
+copyright: 'CC-4'
+
+# Theme Configuration
+theme:
+  language: es
+  name: material
+  custom_dir: assets
+  favicon: 'icon.png'
+  logo: 'icon.png'
+  palette:
+    primary: white
+    accent: blue
+
+# Customization
+extra:
+  social:
+    - type: github
+      link: https://github.com/cc-3/MachineStructures
+
+extra_css:
+  - css/kbd.css
+  - css/custom.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+  - js/latex.js
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Inicio: index.md
+  - Proyectos:
+      Instalación de Material: projects/proj00.md
+      Análisis Léxico: projects/proj01.md
+      Análisis Sintáctico: projects/proj02.md
+      Análisis Semántico: projects/proj03.md

@@ -1,0 +1,8 @@
+body {
+  text-align: justify;
+}
+
+table {
+  display: block;
+  margin: 0 auto !important;
+}
