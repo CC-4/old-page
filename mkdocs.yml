@@ -66,6 +66,12 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
+  - Laboratorios:
+      Laboratorio 1 (COOL): labs/lab01.md
+      Laboratorio 2 (Lexer): labs/lab02.md
+      Laboratorio 3 (RDP): labs/lab03.md
+      Laboratorio 4 (JCup): labs/lab04.md
+      Laboratorio 5 (ST): labs/lab05.md
   - Proyectos:
       Instalación de Material: projects/proj00.md
       Análisis Léxico: projects/proj01.md
