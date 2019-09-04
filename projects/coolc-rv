@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ "$#" -gt 0 ]; then
+  /usr/class/cs143/lib/.i686/PA5J/lexer $* | /usr/class/cs143/lib/.i686/PA5J/parser $* | /usr/class/cs143/lib/.i686/PA5J/semant $* | java -cp /usr/class/cs143/bin/coolc-rv.jar $*
+fi
