@@ -1,3 +1,0 @@
-#!/bin/sh
-
-jupiter /usr/class/cs143/lib/runtime.s $@
