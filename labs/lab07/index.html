@@ -761,15 +761,14 @@
                 <h1 id="lab-7-40analisis-semantico-ii41">Lab 7 (Análisis Semántico II)<a class="headerlink" href="#lab-7-40analisis-semantico-ii41" title="Permanent link">&para;</a></h1>
 <p>En este laboratorio van a continuar con el análisis semántico del lenguaje Viper y así ganar aún más intuición en esta fase del compilador y que plasmar estas ideas en su proyecto sea bastante sencillo. </p>
 <p>Antes de empezar, vamos a obtener los archivos necesarios desde Github Classroom:</p>
-<div class="codehilite"><pre><span></span>https://classroom.github.com/a/LaOHcjyJ
+<div class="codehilite"><pre><span></span>https://classroom.github.com/a/So5ctCTe
 </pre></div>
 
-<p>{% hint style="warning" %}
-Por favor lean todas las instrucciones del lab, antes de empezar.
-{% endhint %}</p>
+<p><b>
+Por favor lean todas las instrucciones del lab, antes de empezar.</b></p>
 <h2 id="1-reglas-de-inferencia">1. Reglas de Inferencia<a class="headerlink" href="#1-reglas-de-inferencia" title="Permanent link">&para;</a></h2>
 <p>Vamos a continuar utilizando el archivo que tiene todas las reglas de inferencia del lenguaje, pueden descargar este archivo aquí:</p>
-<p>{% file src="../.gitbook/assets/viper_language_type_rules.pdf" caption="Reglas de Inferencia Viper" %}</p>
+<p><a href="/semant/viper_language_type_rules.pdf">Reglas de inferencia Viper</a></p>
 <h3 id="11-que-tienen-que-hacer">1.1 ¿Qué tienen que hacer?<a class="headerlink" href="#11-que-tienen-que-hacer" title="Permanent link">&para;</a></h3>
 <p>Como se pudieron dar cuenta en el laboratorio pasado en <strong>src/viper/tree</strong> están definidos los nodos que representan el AST de Viper. En este laboratorio ustedes tienen que completar los 10 nodos restantes, estos nodos son los siguientes:</p>
 <ol>
@@ -784,9 +783,9 @@ Por favor lean todas las instrucciones del lab, antes de empezar.
 <li><strong>Not</strong></li>
 <li><strong>While</strong></li>
 </ol>
-<p>{% hint style="warning" %}
+<p><b>
 Ustedes tienen que copiar lo que implementaron en el laboratorio pasado, de lo contrario el autograder no les dará todos los puntos, simplemente tienen que copiar y reemplazar los archivos. 
-{% endhint %}</p>
+</b></p>
 <p>Para algunos de estos nodos como <strong>LessEqual</strong>, <strong>LessThan</strong>, <strong>Not</strong> su código debería de ser bastante similar a lo que hicieron con las operaciones artiméticas, incluso para <strong>Equal</strong>, solo que aquí tenemos la restricción que ambos operandos tienen que ser del mismo tipo ya sea <strong>int</strong>, <strong>bool</strong> o <strong>str</strong>. Para los demás nodos si van a tener que hacer un par de cosas más.</p>
 <p>Para que tengan una referencia de que tanto tendrían que agregar a los diferentes archivos, aquí están las estadísticas de nuestra implementación:</p>
 <div class="codehilite"><pre><span></span> src/viper/tree/Assign.java      <span class="p">|</span> <span class="m">12</span> +++++++++++-
@@ -821,9 +820,9 @@ Ustedes tienen que copiar lo que implementaron en el laboratorio pasado, de lo c
 <div class="codehilite"><pre><span></span><span class="n">SemantErrors</span><span class="o">.</span><span class="na">cannotFindSymbol</span><span class="o">(</span><span class="n">line</span><span class="o">,</span> <span class="n">col</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
 </pre></div>
 
-<p>{% hint style="success" %}
+<p>
 Van a encontrar útil el entorno <strong>O</strong> en esta parte del laboratorio.
-{% endhint %}</p>
+</p>
 <p>Si la función si existe, ustedes deberían de verificar que la cantidad de argumentos (actuals) sea igual a la cantidad de parámetros formales, si no es así devolver el siguiente error:</p>
 <div class="codehilite"><pre><span></span><span class="n">SemantErrors</span><span class="o">.</span><span class="na">functionCalledWithWrongNumberOfArgs</span><span class="o">(</span><span class="n">line</span><span class="o">,</span> <span class="n">col</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
 </pre></div>
@@ -838,7 +837,7 @@ Van a encontrar útil el entorno <strong>O</strong> en esta parte del laboratori
 <div class="codehilite"><pre><span></span><span class="n">SemantErrors</span><span class="o">.</span><span class="na">variableIsAlreadyDefined</span><span class="o">(</span><span class="n">line</span><span class="o">,</span> <span class="n">col</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
 </pre></div>
 
-<p>{% hint style="info" %}
+<p>
 El error anterior solo debería ocurrir si la variable es declarada más de una vez en el scope actual, algo como esto:</p>
 <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span> <span class="n">void</span> <span class="p">{</span>
     <span class="nb">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
@@ -854,8 +853,8 @@ El error anterior solo debería ocurrir si la variable es declarada más de una 
 <span class="p">}</span>
 </pre></div>
 
-<p>ya que el lenguaje <strong>Viper</strong>,  lastimosamente,  permite <strong>shadowing</strong> como en el lenguage <strong>COOL</strong> y otros lenguajes populares como <strong>java</strong> o <strong>C</strong>. ¿Qué método de <strong>O</strong> les conviene más utilizar?.
-{% endhint %}</p>
+<p>ya que el lenguaje <strong>Viper</strong> permite <strong>shadowing</strong> como en el lenguage <strong>COOL</strong> y otros lenguajes populares como <strong>java</strong> o <strong>C</strong>. ¿Qué método de <strong>O</strong> les conviene más utilizar?.
+</p>
 <p>Si no es el caso que la variable está declarada más de una vez en el <strong>scope</strong> actual, deberían de agregarla al <strong>scope</strong> actual, recuerden que lo que nos interesa guardar de las variables en <strong>O</strong> es el tipo y nada más. Por último verificar que el tipo de <strong>init</strong> sea el mismo tipo que el tipo declarado, de lo contrario indicar el siguiente error:</p>
 <div class="codehilite"><pre><span></span><span class="n">SemantErrors</span><span class="o">.</span><span class="na">incompatibleTypes</span><span class="o">(</span><span class="n">init</span><span class="o">.</span><span class="na">line</span><span class="o">,</span> <span class="n">init</span><span class="o">.</span><span class="na">col</span><span class="o">,</span> <span class="n">init</span><span class="o">.</span><span class="na">getType</span><span class="o">(),</span> <span class="n">type</span><span class="o">);</span>
 </pre></div>
@@ -885,13 +884,12 @@ El error anterior solo debería ocurrir si la variable es declarada más de una 
 </pre></div>
 
 <p>Luego mandar a llamar recursivamente a <code>semant</code> de <strong>thenp</strong> y luego <strong>elsep</strong>, recuerden que en Viper cada par de llaves <code>{}</code> abre un <strong>scope</strong> nuevo. Nuevamente este nodo no es una expresión entonces no es necesario anotarlo.</p>
-<p>{% hint style="info" %}
-Cuando nos referimos a que se abre un scope nuevo, su código debería de verse algo así:</p>
+<p><b>
+Cuando nos referimos a que se abre un scope nuevo, su código debería de verse algo así:</b></p>
 <p><div class="codehilite"><pre><span></span><span class="n">O</span><span class="o">.</span><span class="na">enterScope</span><span class="o">();</span>
 <span class="o">...</span> <span class="c1">// analisis semantico de algo...</span>
 <span class="n">O</span><span class="o">.</span><span class="na">exitScope</span><span class="o">()</span>
-</pre></div>
-{% endhint %}</p>
+</pre></div></p>
 <h4 id="while">While<a class="headerlink" href="#while" title="Permanent link">&para;</a></h4>
 <p>El while es muy similar al <strong>if</strong>, tienen que llamar recursivamente de <strong>cond</strong>, verificar que sea de tipo <strong>bool</strong>, si no lo es indicar el siguiente error:</p>
 <div class="codehilite"><pre><span></span><span class="n">SemantErrors</span><span class="o">.</span><span class="na">incompatibleTypes</span><span class="o">(</span><span class="n">cond</span><span class="o">.</span><span class="na">line</span><span class="o">,</span> <span class="n">cond</span><span class="o">.</span><span class="na">col</span><span class="o">,</span> <span class="n">cond</span><span class="o">.</span><span class="na">getType</span><span class="o">(),</span> <span class="n">Type</span><span class="o">.</span><span class="na">BOOL</span><span class="o">);</span>
@@ -900,7 +898,8 @@ Cuando nos referimos a que se abre un scope nuevo, su código debería de verse 
 <p>Luego mandar a llamar recursivamente a <strong>body</strong>, nuevamente abriendo un <strong>scope</strong> nuevo. Nuevamente este nodo no es una expresión entonces no es necesario anotarlo.</p>
 <h3 id="13-autograder">1.3 Autograder<a class="headerlink" href="#13-autograder" title="Permanent link">&para;</a></h3>
 <p>Para probar su implementación pueden utitlizar lo siguiente:</p>
-<div class="codehilite"><pre><span></span>./check
+<div class="codehilite"><pre><span></span>sudo ./gradlew build
+./check
 </pre></div>
 
 <p>Si todo lo tienen bien, les debería de salir lo siguiente:</p>
@@ -948,7 +947,7 @@ Cuando nos referimos a que se abre un scope nuevo, su código debería de verse 
 </pre></div>
 
 <p>Si ustedes desean probar en un archivo en específico pueden hacer lo siguiente:</p>
-<div class="codehilite"><pre><span></span>./gradlew build
+<div class="codehilite"><pre><span></span>sudo ./gradlew build
 ./run &lt;archivo&gt;
 </pre></div>
 
