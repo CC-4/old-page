@@ -3,17 +3,17 @@ if [ ! -d ../PA1 ] || [ ! -d ../PA2 ] || [ ! -d ../PA3 ]; then
 	exit 1;
 fi
 
-if [ ! -f pa4-grading.pl ]; then
-	wget http://raw.githubusercontent.com/CC-4/cc-4.github.io/master/proyectos/scripts/pa4-grading.pl
-fi 
+if [ ! -f pa4-grading.py ]; then
+	wget https://raw.githubusercontent.com/CC-4/cc-4.github.io/master/projects/grading/pa4-grading.py
+fi
 
-chmod +x pa4-grading.pl
+chmod +x pa4-grading.py
 
 # Run grading with pre-compiled phases
 make clean
 make cgen
 make
-./pa4-grading.pl
+./pa4-grading.py
 INIT_SCORE=$(cat grading/SCORE)
 
 cd ../PA1
@@ -44,8 +44,8 @@ echo '#!/bin/sh' >> semant
 echo 'java -classpath /usr/class/cs143/cool/lib:'$(pwd)'/../PA3/:/usr/java/lib/rt.jar Semant $*' >> semant
 chmod +x semant
 
-# Run grading with your phases 
-./pa4-grading.pl
+# Run grading with your phases
+./pa4-grading.py
 
 mv lexer.back lexer
 mv parser.back parser
@@ -53,5 +53,3 @@ mv semant.back semant
 
 echo "Usando fases compiladas" $INIT_SCORE
 echo "Usando todas sus fases" $(cat grading/SCORE)
-
-
