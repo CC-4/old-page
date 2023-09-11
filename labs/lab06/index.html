@@ -739,7 +739,7 @@
 <p><strong>Por favor lean todas las instrucciones del lab, antes de empezar.</strong></p>
 
 <h2 id="2-analisis-semantico-del-lenguaje-viper">Análisis Semántico del lenguaje Viper<a class="headerlink" href="#2-analisis-semantico-del-lenguaje-viper" title="Permanent link">&para;</a></h2>
-<p>Para el ejercicio 2 haremos el análisis semántico de algunos nodos del lenguaje Viper, así que los introduciremos a el un poco.</p>
+<p>En este laboratorio haremos el análisis semántico de algunos nodos del lenguaje Viper, así que los introduciremos a el un poco.</p>
 <h3 id="21-lenguaje-viper">Lenguaje Viper<a class="headerlink" href="#21-lenguaje-viper" title="Permanent link">&para;</a></h3>
 <p><strong>Viper</strong> es un lenguaje bastante básico, es una mezcla de python y C, pero tiene características importantes para fines didácticos así que lo estaremos utilizando en este laboratorio y en los posteriores para terminar su análisis semántico y para realizar su <strong>generación de código</strong>, por eso sería bueno que se acostumbren un poco al lenguaje. </p>
 <p>La mejor forma de entender este lenguaje es revisando la gramática dentro de la carpeta del lab está una subcarpeta llamada <strong>doc</strong> donde está en formato PDF llamada <strong>Viper_Language_Grammar.pdf</strong>. Una vez hayan visto/entendido la gramática, esto les parecera conocido:</p>
@@ -870,7 +870,7 @@ bad operand types for binary operator &#39;+&#39;
 
 <p>Para compilar un programa usando el semantic que acaba de implementar, use el comando:</p>
 <div class="codehilite"><pre><span></span>sudo ./gradlew build
-./run -viper &lt;archivo&gt;
+./run -viper examples/viper/nombreDelArchivo.vp
 </pre></div>
 
 <p>Para correr todas las pruebas, use el comando:</p>
@@ -900,13 +900,11 @@ bad operand types for binary operator &#39;+&#39;
 </pre></div>
 
 <p>Si necesitara compilar algún archivo con nuestro compilador de pruebas puede usar el siguiente comando. Esto le servirá principalmente cuando lleguemos a codegen.</p>
-<div class="codehilite"><pre><span></span>sudo ./gradlew build
-./vipercl examples/viper/nombreDelArchivo.vp
+<div class="codehilite"><pre><span></span>./vipercl examples/viper/nombreDelArchivo.vp
 </pre></div>
 
 <p>Luego de haber compilado, use el siguiente comando para ejecutar.</p>
-<div class="codehilite"><pre><span></span>sudo ./gradlew build
-./jupiter runtime/runtime.s examples/viper/nombreDelArchivo.s
+<div class="codehilite"><pre><span></span>./jupiter runtime/runtime.s examples/viper/nombreDelArchivo.s
 </pre></div>                
                   
                 
